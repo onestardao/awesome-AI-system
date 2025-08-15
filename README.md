@@ -8,8 +8,9 @@ This repo is motivated by [awesome tensor compilers](https://github.com/merrymer
   - [LLM Serving Framework](#llm-serving-framework)
   - [LLM Evaluation Platform](#llm-evaluation-platform)
   - [LLM Inference System Side)](#llm-inference-system-side)
+  - [RAG And ANNS](#rag-and-anns)
   - [RLHF](#rlhf)
-  - [DIT](#dit)
+  - [Video](#video)
   - [LLM Inference AI Side)](#llm-inference-ai-side)
   - [LLM MoE](#llm-moe)
   - [LoRA](#lora)
@@ -84,9 +85,15 @@ This repo is motivated by [awesome tensor compilers](https://github.com/merrymer
 
 
 ### LLM Inference (System Side)
-
 | Title | Paper | Github| WebSite | Pub. & Date
 |:-----:|:-----:|:-----:|:-----:|:-----:|
+| XSched: Preemptive Scheduling for Diverse XPUs| [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.usenix.org/system/files/osdi25-shen-weihang.pdf) | [![Star](https://img.shields.io/github/stars/XpuOS/xsched.svg)](https://github.com/XpuOS/xsched.git) | - | OSDI 25|
+| TokenWeave: Efficient Compute-Communication Overlap for Distributed LLM Inference| [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2505.11329) | [![Star](https://img.shields.io/github/stars/microsoft/tokenweave.svg)](https://github.com/microsoft/tokenweave.git) | - | Arxiv 25|
+|  ServeGen: Workload Characterization and Generation of Large Language Model Serving in Production| [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2505.09999) | [![Star](https://img.shields.io/github/stars/alibaba/ServeGen.svg)](https://github.com/alibaba/ServeGen.git) | - | Arxiv 25|
+|  Resource Multiplexing in Tuning and Serving Large Language Models | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.usenix.org/system/files/atc25-he-yongjun.pdf) | [![Star](https://img.shields.io/github/stars/llm-db/llmstation.svg)](https://github.com/llm-db/llmstation) | - | ATC'25|
+|  RetroInfer: A Vector-Storage Approach for Scalable Long-Context LLM Inference | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2505.02922) | [![Star](https://img.shields.io/github/stars/microsoft/RetrievalAttention.svg)](https://github.com/microsoft/RetrievalAttention.git) | - | Arxiv May 2025 |
+|  SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/pdf/2504.08850) | [![Star](https://img.shields.io/github/stars/infinigence/SpecEE.svg)](https://github.com/infinigence/SpecEE) | - | ISCA'25 |
+|   LIA: A Single-GPU LLM Inference Acceleration with Cooperative AMX-Enabled CPU-GPU Computation and CXL Offloading | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://dl.acm.org/doi/pdf/10.1145/3695053.3731092) | [![Star](https://img.shields.io/github/stars/hyungyokim/LIA_AMXGPU.svg)](https://github.com/hyungyokim/LIA_AMXGPU) | - | ISCA'25 |
 |  Apt-Serve: Adaptive Request Scheduling on Hybrid Cache for Scalable LLM Inference Serving | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2504.07494) | [![Star](https://img.shields.io/github/stars/eddiegaoo/Apt-Serve.svg)](https://github.com/eddiegaoo/Apt-Serve) | - | SIGMOD'25 |
 |  Marconi: Prefix Caching for the Era of Hybrid LLMs | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/pdf/2411.19379) | [![Star](https://img.shields.io/github/stars/ruipeterpan/marconi.svg)](https://github.com/ruipeterpan/marconi) | - | MLSys'25 |
 |  SpInfer: Leveraging Low-Level Sparsity for Efficient Large Language Model Inference on GPUs | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://dl.acm.org/doi/10.1145/3689031.3717481) | [![Star](https://img.shields.io/github/stars/MachineLearningSystem/25Eurosys-SpInfer.svg)](https://github.com/MachineLearningSystem/25Eurosys-SpInfer) | - | Eurosys'25 Best Paper |
@@ -97,7 +104,7 @@ This repo is motivated by [awesome tensor compilers](https://github.com/merrymer
 | Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2406.01566) | [![Star](https://img.shields.io/github/stars/Thesys-lab/Helix-ASPLOS25.svg)](https://github.com/Thesys-lab/Helix-ASPLOS25.git) | - | ASPLOS'25 |
 |GLINTHAWK: A Two-Tiered Architecture for High-Throughput LLM Inference  | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/pdf/2501.11779) | [![Star](https://img.shields.io/github/stars/microsoft/glinthawk.svg)](https://github.com/microsoft/glinthawk) | - | Arxiv'25,Jan |
 | Queue Management for SLO-Oriented Large Language Model Serving | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://haoran-qiu.com/pdf/socc24-qlm.pdf) | [![Star](https://img.shields.io/github/stars/QLM-project/QLM.svg)](https://github.com/QLM-project/QLM.git) | - | SOCC'24 |
-|NanoFlow: Towards Optimal Large Language Model Serving Throughput | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2408.12757) | [![Star](https://img.shields.io/github/stars/efeslab/Nanoflow.svg)](https://github.com/efeslab/Nanoflow.git) | - | Arxiv'24 |
+|NanoFlow: Towards Optimal Large Language Model Serving Throughput | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2408.12757) | [![Star](https://img.shields.io/github/stars/efeslab/Nanoflow.svg)](https://github.com/efeslab/Nanoflow.git) | - | OSDI'25 |
 | PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://ipads.se.sjtu.edu.cn/_media/publications/powerinfer-20231219.pdf) | [![Star](https://img.shields.io/github/stars/SJTU-IPADS/PowerInfer.svg)](https://github.com/SJTU-IPADS/PowerInfer) | - | SOSP'24 |
 |LoongServe: Efficiently Serving Long-context Large Language Models with Elastic Sequence Parallelism | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2404.09526) | [![Star](https://img.shields.io/github/stars/LoongServe/LoongServe.svg)](https://github.com/LoongServe/LoongServe) | - | SOSP'24 |
 |Keyformer: KV Cache Reduction through Key Tokens Selection for Efficient Generative Inference | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2403.09054) | [![Star](https://img.shields.io/github/stars/d-matrix-ai/keyformer-llm.svg)](https://github.com/d-matrix-ai/keyformer-llm) | - | MLSYS'24 |
@@ -118,16 +125,31 @@ This repo is motivated by [awesome tensor compilers](https://github.com/merrymer
 | Flash-LLM: Enabling Cost-Effective and Highly-Efficient Large Generative Model Inference with Unstructured Sparsity | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.vldb.org/pvldb/vol17/p211-xia.pdf) | [![Star](https://img.shields.io/github/stars/AlibabaResearch/flash-llm.svg)](https://github.com/AlibabaResearch/flash-llm) | - | VLDB'24 |
 
 
+### RAG And ANNS
+| Title | Paper | Github| WebSite | Pub. & Date
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| LEANN: A Low-Storage Vector Index | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)]({https://arxiv.org/abs/2506.08276) | [![Star](https://img.shields.io/github/stars/yichuan-w/LEANN.svg)](https://github.com/yichuan-w/LEANN.git) | - | Arxiv 25 |
+| OdinANN: Direct Insert for Consistently Stable Performance in Billion-Scale Graph-Based Vector Search | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.usenix.org/system/files/osdi25-guo.pdf) | [![Star](https://img.shields.io/github/stars/thustorage/PipeANN.svg)](https://github.com/thustorage/PipeANN) | - | FAST'26 |
+| Achieving Low-Latency Graph-Based Vector Search via Aligning Best-First Search Algorithm with SSD | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.usenix.org/system/files/osdi25-guo.pdf) | [![Star](https://img.shields.io/github/stars/thustorage/PipeANN.svg)](https://github.com/thustorage/PipeANN) | - | OSDI'25 |
+| Quake: Adaptive Indexing for Vector Search| [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.usenix.org/system/files/osdi25-mohoney.pdf) | [![Star](https://img.shields.io/github/stars/marius-team/quake.svg)](https://github.com/marius-team/quake) | - | OSDI'25 |
+| Hermes: Algorithm-System Co-design for Efficient Retrieval Augmented Generation At-Scale | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://dl.acm.org/doi/pdf/10.1145/3695053.3731076) | [![Star](https://img.shields.io/github/stars/S4AI-CornellTech/Hermes.svg)](https://github.com/S4AI-CornellTech/Hermes) | - | ISCA'25 |
+| PathWeaver: A High-Throughput Multi-GPU System for Graph-Based Approximate Nearest Neighbor Search | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.usenix.org/system/files/atc25-kim.pdf) | [![Star](https://img.shields.io/github/stars/AIS-SNU/PathWeaver.svg)](https://github.com/AIS-SNU/PathWeaver.git) | - | ATC'25 |
+| In-Storage Acceleration of Retrieval Augmented Generation as a Service: Artifact Evaluation README | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://dl.acm.org/doi/pdf/10.1145/3695053.3731032) | [![Star](https://img.shields.io/github/stars/he-actlab/ragx.svg)](https://github.com/he-actlab/ragx) | - | ISCA'25 |
+| RAGO: Systematic Performance Optimization for Retrieval-Augmented Generation Serving | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2503.14649) | [![Star](https://img.shields.io/github/stars/google/rago.svg)](https://github.com/google/rago.git) | - | ISCA'25 |
+
 ### RLHF
 | Title | Paper | Github| WebSite | Pub. & Date
 |:-----:|:-----:|:-----:|:-----:|:-----:|
+| Optimizing RLHF Training for Large Language Models with Stage Fusion | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2409.13221) | [![Star](https://img.shields.io/github/stars/FlexFusion/FlexFusion.svg)](https://github.com/FlexFusion/FlexFusion.git) | - | NSDI'25 |
 | HybridFlow: A Flexible and Efficient RLHF Framework | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2409.19256v2) | [![Star](https://img.shields.io/github/stars/volcengine/verl.svg)](https://github.com/volcengine/verl.git) | - | Eurosys'25 |
 | ReaLHF: Optimized RLHF Training for Large Language Models through Parameter Reallocation | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2406.14088) | [![Star](https://img.shields.io/github/stars/openpsi-project/ReaLHF.svg)](https://github.com/openpsi-project/ReaLHF.git)| - | June. 2024 |
 | OpenRLHF: An Easy-to-use, Scalable and High-performance RLHF Framework| [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2405.11143) | [![Star](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF.svg)](https://github.com/OpenRLHF/OpenRLHF)| - | May. 2024 |
 
-### DIT
+### Video
 | Title | Paper | Github| WebSite | Pub. & Date
 |:-----:|:-----:|:-----:|:-----:|:-----:|
+| Katz: Efficient Workflow Serving for Diffusion Models with Many Adapters | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.usenix.org/system/files/atc25-li-suyi-katz.pdf) | [![Star](https://img.shields.io/github/stars/modelscope/Katz.svg)](https://github.com/modelscope/Katz) | - | ATC'25 |
+| PPipe: Efficient Video Analytics Serving on Heterogeneous GPU Clusters via Pool-Based Pipeline Parallelism | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.usenix.org/system/files/atc25-kong.pdf) | [![Star](https://img.shields.io/github/stars/JonnyKong/PPipe.svg)](https://github.com/JonnyKong/PPipe.git) | - | Nov. 2024 |
 | xDiT: an Inference Engine for Diffusion Transformers (DiTs) with Massive Parallelism | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2411.01738) | [![Star](https://img.shields.io/github/stars/xdit-project/xDiT.svg)](https://github.com/xdit-project/xDiT.git) | - | Nov. 2024 |
 | FastVideo | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2411.01738) | [![Star](https://img.shields.io/github/stars/hao-ai-lab/FastVideo.svg)](https://github.com/hao-ai-lab/FastVideo.git) | - | Dec. 2024 |
 
