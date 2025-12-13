@@ -8,6 +8,8 @@ This repo is motivated by [awesome tensor compilers](https://github.com/merrymer
   - [LLM Serving Framework](#llm-serving-framework)
   - [LLM Evaluation Platform](#llm-evaluation-platform)
   - [LLM Inference System Side)](#llm-inference-system-side)
+  - [Compiler](#compiler)
+  - [Attention](#attention)
   - [RAG And ANNS](#rag-and-anns)
   - [RLHF](#rlhf)
   - [Video](#video)
@@ -87,7 +89,7 @@ This repo is motivated by [awesome tensor compilers](https://github.com/merrymer
 ### LLM Inference (System Side)
 | Title | Paper | Github| WebSite | Pub. & Date
 |:-----:|:-----:|:-----:|:-----:|:-----:|
-| Aegaeon: Effective GPU Pooling for Concurrent LLM Serving on the Market | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://ennanzhai.github.io/pub/sosp25-aegaeon.pdf) | [![Star](https://img.shields.io/github/stars/zyqCSL/DiffKV.svg)](https://github.com/zyqCSL/DiffKV.git) | - | SOSP'25|
+| Aegaeon: Effective GPU Pooling for Concurrent LLM Serving on the Market | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://ennanzhai.github.io/pub/sosp25-aegaeon.pdf) |  | - | SOSP'25|
 | DiffKV: Differentiated Memory Management for Large Language Models with Parallel KV Compaction | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://dl.acm.org/doi/pdf/10.1145/3731569.3764810) | [![Star](https://img.shields.io/github/stars/zyqCSL/DiffKV.svg)](https://github.com/zyqCSL/DiffKV.git) | - | SOSP'25|
 | Pie: A Programmable Serving System for Emerging LLM Applications | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://pie-project.org/assets/files/gim2025pie-205fb6aa1c1b3c9e172dd1db182db8e5.pdf) | [![Star](https://img.shields.io/github/stars/pie-project/pie.svg)](https://github.com/pie-project/pie.git) | - | SOSP'25|
 | KTransformers: Unleashing the Full Potential of CPU/GPU Hybrid Inference for MoE Models| [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://madsys.cs.tsinghua.edu.cn/publication/ktransformers-unleashing-the-full-potential-of-cpu/gpu-hybrid-inference-for-moe-models/SOSP25-chen.pdf) | [![Star](https://img.shields.io/github/stars/kvcache-ai/ktransformers.svg)](https://github.com/kvcache-ai/ktransformers) | - | SOSP'25|
@@ -127,6 +129,20 @@ This repo is motivated by [awesome tensor compilers](https://github.com/merrymer
 |Liger: Interleaving Intra- and Inter-Operator Parallelism for Distributed Large Model Inference| - | [![Star](https://img.shields.io/github/stars/MachineLearningSystem/24PPOPP-Liger.svg)](https://github.com/MachineLearningSystem/24PPOPP-Liger) |-| PPOPP'24
 |Efficiently Programming Large Language Models using SGLang| [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/pdf/2312.07104.pdf)| [![Star](https://img.shields.io/github/stars/sgl-project/sglang.svg)](https://github.com/sgl-project/sglang.git) | - | Nurips'24 | 
 | Flash-LLM: Enabling Cost-Effective and Highly-Efficient Large Generative Model Inference with Unstructured Sparsity | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.vldb.org/pvldb/vol17/p211-xia.pdf) | [![Star](https://img.shields.io/github/stars/AlibabaResearch/flash-llm.svg)](https://github.com/AlibabaResearch/flash-llm) | - | VLDB'24 |
+
+### Compiler
+| Title | Paper | Github| WebSite | Pub. & Date
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| Mercury: Unlocking Multi-GPU Operator Optimization for LLMs via Remote Memory Scheduling| [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://dl.acm.org/doi/pdf/10.1145/3731569.3764798) | [![Star](https://img.shields.io/github/stars/ChandlerGuan/mercury_artifact.svg)](https://github.com/ChandlerGuan/mercury_artifact.git) | - | SOSP'25|
+| Mirage: A Multi-Level Superoptimizer  for Tensor Programs| [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.usenix.org/system/files/osdi25-wu-mengdi.pdf) | [![Star](https://img.shields.io/github/stars/mirage-project/mirage.svg)](https://github.com/mirage-project/mirage.git) | - | OSDI'25|
+
+### Attention
+| Title | Paper | Github| WebSite | Pub. & Date
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| UltraAttn: Efficiently Parallelizing Attention through Hierarchical Context-Tiling | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://dl.acm.org/doi/pdf/10.1145/3712285.3759894) | [![Star](https://img.shields.io/github/stars/oliverYoung2001/UltraAttn.svg)](https://github.com/oliverYoung2001/UltraAttn.git) | - | SC'25|
+| TASP: Topology-aware Sequence Parallelism | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/pdf/2509.26541) | [![Star](https://img.shields.io/github/stars/infinigence/HamiltonAttention.svg)](https://github.com/infinigence/HamiltonAttention.git) | - | Arxiv'25|
+| Ring Attn | | [![Star](https://img.shields.io/github/stars/zhuzilin/ring-flash-attention.svg)](https://github.com/zhuzilin/ring-flash-attention.git) | - | |
+
 
 
 ### RAG And ANNS
