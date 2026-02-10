@@ -91,7 +91,7 @@ This repo is motivated by [awesome tensor compilers](https://github.com/merrymer
 
 | Title | Paper | Github | Pub. & Date |
 |:-----:|:-----:|:------:|:-----------:|
-| WFGY 1.0: Self-healing LLM Systems Framework | [![DOI](https://img.shields.io/badge/DOI-10.6084%2Fm9.figshare.30338884-9cf)](https://doi.org/10.6084/m9.figshare.30338884) <br> [PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | [![Star](https://img.shields.io/github/stars/onestardao/WFGY.svg)](https://github.com/onestardao/WFGY) | Figshare DOI 10.6084/m9.figshare.30338884 |
+| WFGY 1.0: Self-healing LLM Systems Framework | [![DOI](https://img.shields.io/badge/DOI-10.6084%2Fm9.figshare.30338884-9cf)](https://doi.org/10.6084/m9.figshare.30338884) <br> [PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | [![Star](https://img.shields.io/github/stars/onestardao/WFGY.svg)](https://github.com/onestardao/WFGY) | Tech report, Oct 13 2025 |
 
 
 ### LLM Inference (System Side)
